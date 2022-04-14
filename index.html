@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220414230156">
+  <title>Ломбард онлайн</title>
+</head>
+
+
+
+<body class="body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="header__logo logo" href="#">
+        <img class="logo__img" src="img/logo.svg" alt="логотип">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link link" href="#">
+              Заявки
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link link" href="#">
+              Ломбард онлайн
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <button class="menu__list-link link popup-btn" data-path="support-popup">
+              Вызов специалиста
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="basket">
+        <a class="basket__link" href="#">
+          <svg class="basket__ic">
+            <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
+          </svg>
+        </a>
+        <span class="disabled basket__num">
+          0
+        </span>
+      </div>
+      <button class="header__link link popup-btn second-btn" data-path="form-popup">
+        Мой кабинет
+      </button>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="first">
+        <div class="container">
+          <div class="first__inner" style="background-image: url('img/main/first-sec/bg-1.jpg');">
+            <div class="first__box">
+              <h1 class="first__title">
+                Ломбард
+                <span class="first__title--break">онлайн</span>
+              </h1>
+              <p class="first__text">
+                Кредит под залог практически любой бытовой и электронной техники
+                и электроинструментов
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="container">
+          <div class="product__info">
+            <h2 class="title">
+              Наши товары
+            </h2>
+            <ul class="product__list">
+              <li class="product__list-item">
+                <a class="product__list-link current" href="#">
+                  Все товары
+                </a>
+              </li>
+              <li class="product__list-item">
+                <a class="product__list-link" href="#">
+                  Телефоны,планшеты
+                </a>
+              </li>
+              <li class="product__list-item">
+                <a class="product__list-link" href="#">
+                  Компьтерная техника
+                </a>
+              </li>
+              <li class="product__list-item">
+                <a class="product__list-link" href="#">
+                  Электроинструмент
+                </a>
+              </li>
+              <li class="product__list-item">
+                <a class="product__list-link" href="#">
+                  Телевизоры, аудио-видео
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="slider__container">
+            <div class="slider__btn-prev swiper-button-prev"></div>
+            <div class="slider__btn-next swiper-button-next"></div>
+            <div class="slider swiper">
+              <div class="swiper-wrapper">
+                <div class="slider__slide swiper-slide">
+                  <a class="card" href="#">
+                    <div class="card__imgbox">
+                      <picture>
+                        <source srcset="img/main/product/01.webp" type="image/webp">
+                        <img class="card__img" src="img/main/product/01.png" alt="смарт-часы">
+                      </picture>
+                    </div>
+                    <h4 class="card__title">
+                      Смарт-часы Apple Watch Series 7 GPS 41mm Blue
+                    </h4>
+                    <div class="card__box">
+                      <span class="card__price">
+                        107.00 €
+                      </span>
+                      <button class="card__btn">
+                        <svg class="card__btn-ic">
+                          <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <a class="card" href="#">
+                    <div class="card__imgbox">
+                      <picture>
+                        <source srcset="img/main/product/02.webp" type="image/webp">
+                        <img class="card__img" src="img/main/product/02.png" alt="смарт-часы">
+                      </picture>
+                    </div>
+                    <h4 class="card__title">
+                      Мобильный телефон Apple iPhone 13 Pro
+                    </h4>
+                    <div class="card__box">
+                      <span class="card__price">
+                        1100.00 €
+                      </span>
+                      <button class="card__btn">
+                        <svg class="card__btn-ic">
+                          <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <a class="card" href="#">
+                    <div class="card__imgbox">
+                      <picture>
+                        <source srcset="img/main/product/03.webp" type="image/webp">
+                        <img class="card__img" src="img/main/product/03.png" alt="смарт-часы">
+                      </picture>
+                    </div>
+                    <h4 class="card__title">
+                      Наушники Audio-Technica ATH-M40x Black
+                    </h4>
+                    <div class="card__box">
+                      <span class="card__price">
+                        90.00 €
+                      </span>
+                      <button class="card__btn">
+                        <svg class="card__btn-ic">
+                          <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <a class="card" href="#">
+                    <div class="card__imgbox">
+                      <picture>
+                        <source srcset="img/main/product/04.webp" type="image/webp">
+                        <img class="card__img" src="img/main/product/04.png" alt="смарт-часы">
+                      </picture>
+                    </div>
+                    <h4 class="card__title">
+                      Монитор 27" Dell SE2722H (210-AZKS)
+                    </h4>
+                    <div class="card__box">
+                      <span class="card__price">
+                        120.00 €
+                      </span>
+                      <button class="card__btn">
+                        <svg class="card__btn-ic">
+                          <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+                <div class="slider__slide swiper-slide">
+                  <a class="card" href="#">
+                    <div class="card__imgbox">
+                      <picture>
+                        <source srcset="img/main/product/02.webp" type="image/webp">
+                        <img class="card__img" src="img/main/product/02.png" alt="смарт-часы">
+                      </picture>
+                    </div>
+                    <h4 class="card__title">
+                      Наушники Audio-Technica ATH-M40x Black
+                    </h4>
+                    <div class="card__box">
+                      <span class="card__price">
+                        90.00 €
+                      </span>
+                      <button class="card__btn">
+                        <svg class="card__btn-ic">
+                          <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__box">
+              <h2 class="about__title second-title">
+                О нас
+                </h3>
+                <p class="about__text">
+                  Как один из лидеров рынка залогового кредитования физических лиц «Ломбард Онлайн» стремится постоянно
+                  расширять возможности клиентов при получении займов, а также совершенствует сервис, расширяя линейку
+                  принимаемых залогов: можно получить кредит практически под любой вид бытовой
+                  и электронной техники, и электроинструментов. Клиентам обеспечены абсолютно прозрачные условия
+                  кредитования
+                  и возможность выбрать оптимальный тарифный продукт, максимально отвечающий их потребностям.
+                </p>
+            </div>
+            <picture>
+              <source srcset="img/main/about/1.webp" type="image/webp">
+              <img class="about__img" src="img/main/about/1.png" alt="декоративная картинка">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="container">
+          <div class="info__inner">
+            <div class="info__item">
+              <h2 class="info__title title">
+                Условия предоставления потребительского займа
+                в ООО «Ломбард Онлайн»:
+              </h2>
+              <p class="info__text">
+                период погашения займа от 60 до 330 дней с даты залога.
+                Пример расчета стоимости займа (сумма займа 100.00 €., период 62 дня, процентная ставка 0,134% в день,
+                процентная ставка 48,91% в год): сумма процентов = 100.00 € х 0,134/100 х 62 дня = 110.00 €
+              </p>
+            </div>
+            <div class="info__item">
+              <p class="info__text">
+                Если клиент не планирует востребовать предмет залога,
+                то по истечению срока пользования займом и льготного месяца залог реализуется на торгах, никаких
+                претензий и штрафов нет.
+              </p>
+              <p class="info__text">
+                Информация не передается в бюро кредитных историй, поэтому факт не выкупа не влияет на кредитную историю
+                клиента при дальнейшем сотрудничестве.
+                Размер процентной ставки (минимальная и максимальная)
+                в день зависит от предмета залога и суммы займа.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__item">
+        <a class="footer__link footer__link--adress" href="#">
+          SIA “Esteriol”
+          Reg. nr. 41503078790
+          Varšavas iela 48, Daugavpils,
+          <span class="footer__link-word">LV-5404</span>
+        </a>
+        <p class="footer__copy">
+          © 2022 ООО “Ломбард Онлайн”
+        </p>
+      </div>
+      <div class="footer__item">
+        <a class="footer__item-link contact-link" href="tel:+37129999209">
+          +371 29 999 209
+        </a>
+        <a class="footer__link footer__mail" href="mailto:info@esteriol.lv">
+          info@esteriol.lv
+        </a>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <svg class="footer__list-ic">
+              <use xlink:href="img/icons/multi/spriteMulti.svg#visa"></use>
+            </svg>
+          </li>
+          <li class="footer__list-item">
+            <svg class="footer__list-ic">
+              <use xlink:href="img/icons/multi/spriteMulti.svg#mastercard"></use>
+            </svg>
+          </li>
+          <li class="footer__list-item">
+            <img class="footer__list-ic" src="img/icons/multi/spriteMulti.svg#word" alt="">
+          </li>
+          <li class="footer__list-item">
+            <svg class="footer__list-ic">
+              <use xlink:href="img/icons/multi/spriteMulti.svg#maestro"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <div class="modals">
+    <div class="modal-overlay">
+      <div class="modal modal--1" data-target="form-popup" data-simplebar>
+        <button class="modal__close">
+          <svg class="modal__close-ic">
+            <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__tabs">
+          <button class="modal__tabs-btn tab-btn active" data-path="login-form">
+            Авторизация
+          </button>
+          <button class="modal__tabs-btn tab-btn" data-path="reg-form">
+            Регистрация
+          </button>
+        </div>
+        <form class="popup-form active" action="#" data-target="login-form" >
+          <label class="popup-form__label">
+            <span class="popup-form__text">
+              E-mail:
+            </span>
+            <input class="popup-form__input" type="email" placeholder="Введите ваш e-mail">
+          </label>
+          <label class="popup-form__label">
+            <span class="popup-form__text">
+              Пароль:
+            </span>
+            <input class="popup-form__input" type="password" placeholder="Введите ваш пароль">
+          </label>
+          <div class="popup-form__box">
+            <button class="popup-form__btn second-btn" type="submit">
+              Войти
+            </button>
+            <button class="popup-form__popup-btn popup-btn" type="button" data-path="recovery-popup">
+              Забыли пароль?
+            </button>
+          </div>
+        </form>
+        <form class="popup-form" action="#" data-target="reg-form">
+          <label class="popup-form__label">
+            <span class="popup-form__text">
+              Имя:
+            </span>
+            <input class="popup-form__input" type="text" placeholder="Введите ваше имя">
+          </label>
+          <label class="popup-form__label">
+            <span class="popup-form__text">
+              Фамилия:
+            </span>
+            <input class="popup-form__input" type="email" placeholder="Введите вашу фамилию">
+          </label>
+          <label class="popup-form__label">
+            <span class="popup-form__text">
+              E-mail:
+            </span>
+            <input class="popup-form__input" type="email" placeholder="Введите ваш e-mail">
+          </label>
+          <label class="popup-form__label">
+            <span class="popup-form__text">
+              Пароль:
+            </span>
+            <input class="popup-form__input" type="password" placeholder="Введите ваш пароль">
+          </label>
+          <label class="popup-form__label">
+            <span class="popup-form__text">
+              Повторить пароль:
+            </span>
+            <input class="popup-form__input" type="password" placeholder="Введите пароль повторно">
+          </label>
+          <button class="popup-form__btn second-btn" type="submit">
+            Войти
+          </button>
+        </form>
+      </div>
+      <div class="modal recovery-modal" data-target="recovery-popup" data-simplebar>
+        <button class="modal__close">
+          <svg class="modal__close-ic">
+            <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__tabs-btn recovery-modal__text">
+          Восстановить пароль
+        </div>
+        <form class="recovery-form" action="#">
+          <label class="popup-form__label">
+            <span class="popup-form__text">
+              E-mail:
+            </span>
+            <input class="popup-form__input" type="text" placeholder="Введите ваш e-mail">
+          </label>
+          <button class="popup-form__btn second-btn" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+      <div class="modal support-modal" data-target="support-popup" data-simplebar>
+        <button class="modal__close">
+          <svg class="support-modal__ic modal__close-ic">
+            <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
+          </svg>
+        </button>
+        <div class="support-modal__text">
+          Вызов специалиста
+        </div>
+        <div class="support-modal__inner">
+          <form class="recovery-form" action="#">
+            <label class="popup-form__label">
+              <span class="popup-form__text">
+                Имя и фамилия:
+              </span>
+              <input class="popup-form__input" type="text" placeholder="Введите ваше имя и фамилию">
+            </label>
+            <label class="popup-form__label">
+              <span class="popup-form__text">
+                Телефон:
+              </span>
+              <input class="popup-form__input" type="text" placeholder="+XX XXX XXX XX XX">
+            </label>
+            <label class="popup-form__label">
+              <span class="popup-form__text">
+                Ваше изделие:
+              </span>
+              <div class="popup-form__box">
+                <select class="popup-form__select" name="" id="">
+                  <option class="popup-form__option" value="">Указать изделие</option>
+                  <option class="popup-form__option" value="">Ноутбук</option>
+                  <option class="popup-form__option" value="">Телефон</option>
+                  <option class="popup-form__option" value="">Планшет</option>
+                </select>
+              </div>
+            </label>
+            <button class="popup-form__btn second-btn" type="submit">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.min.js?_v=20220414230156"></script>
+</body>
+
+</html>
