@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220414230156">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220415225102">
   <title>Ломбард онлайн</title>
 </head>
-
-
 
 <body class="body">
   <div class="site-container">
@@ -17,9 +15,16 @@
   <div class="container">
     <div class="header__inner">
       <a class="header__logo logo" href="#">
-        <img class="logo__img" src="img/logo.svg" alt="логотип">
+        <picture>
+          <source srcset="img/logo.svg" media="(min-width: 520px)">
+          <source srcset="img/phone-logo.svg" media="(min-width: 320px)">
+          <img class="logo__img" src="img/logo.svg" alt="логотип">
+         </picture>
       </a>
       <nav class="menu">
+        <button class="burger">
+          <span class="burger__line"></span>
+        </button>
         <ul class="menu__list">
           <li class="menu__list-item">
             <a class="menu__list-link link" href="#">
@@ -32,7 +37,7 @@
             </a>
           </li>
           <li class="menu__list-item">
-            <button class="menu__list-link link popup-btn" data-path="support-popup">
+            <button class="menu__list-link link popup-btn btn-reset" data-path="support-popup">
               Вызов специалиста
             </button>
           </li>
@@ -40,7 +45,7 @@
       </nav>
       <div class="basket">
         <a class="basket__link" href="#">
-          <svg class="basket__ic">
+          <svg class="second-ic">
             <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
           </svg>
         </a>
@@ -48,8 +53,13 @@
           0
         </span>
       </div>
-      <button class="header__link link popup-btn second-btn" data-path="form-popup">
-        Мой кабинет
+      <button class="header__btn popup-btn second-btn" data-path="form-popup">
+        <span class="header__btn-text">
+          Мой кабинет
+        </span>
+        <svg class="header__btn-ic">
+          <use xlink:href="img/icons/mono/spriteMono.svg#user"></use>
+        </svg>
       </button>
     </div>
   </div>
@@ -57,7 +67,7 @@
     <main class="main">
       <section class="first">
         <div class="container">
-          <div class="first__inner" style="background-image: url('img/main/first-sec/bg-1.jpg');">
+          <div class="first__inner">
             <div class="first__box">
               <h1 class="first__title">
                 Ломбард
@@ -68,13 +78,17 @@
                 и электроинструментов
               </p>
             </div>
+            <picture>
+              <source srcset="img/main/first-sec/bg-1.webp" media="(min-width: 768)" type="image/webp">
+              <img class="first__img" src="img/main/first-sec/bg-1.png" alt="">
+            </picture>
           </div>
         </div>
       </section>
       <section class="product">
         <div class="container">
           <div class="product__info">
-            <h2 class="title">
+            <h2 class="product__title title">
               Наши товары
             </h2>
             <ul class="product__list">
@@ -125,8 +139,8 @@
                       <span class="card__price">
                         107.00 €
                       </span>
-                      <button class="card__btn">
-                        <svg class="card__btn-ic">
+                      <button class="card__btn btn-reset">
+                        <svg class="second-ic">
                           <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
                         </svg>
                       </button>
@@ -148,8 +162,8 @@
                       <span class="card__price">
                         1100.00 €
                       </span>
-                      <button class="card__btn">
-                        <svg class="card__btn-ic">
+                      <button class="card__btn btn-reset">
+                        <svg class="second-ic">
                           <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
                         </svg>
                       </button>
@@ -171,8 +185,8 @@
                       <span class="card__price">
                         90.00 €
                       </span>
-                      <button class="card__btn">
-                        <svg class="card__btn-ic">
+                      <button class="card__btn btn-reset">
+                        <svg class="second-ic">
                           <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
                         </svg>
                       </button>
@@ -194,8 +208,8 @@
                       <span class="card__price">
                         120.00 €
                       </span>
-                      <button class="card__btn">
-                        <svg class="card__btn-ic">
+                      <button class="card__btn btn-reset">
+                        <svg class="second-ic">
                           <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
                         </svg>
                       </button>
@@ -217,8 +231,8 @@
                       <span class="card__price">
                         90.00 €
                       </span>
-                      <button class="card__btn">
-                        <svg class="card__btn-ic">
+                      <button class="card__btn btn-reset">
+                        <svg class="second-ic">
                           <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
                         </svg>
                       </button>
@@ -226,8 +240,8 @@
                   </a>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
+            <div class="slider__pagination swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -248,7 +262,7 @@
                 </p>
             </div>
             <picture>
-              <source srcset="img/main/about/1.webp" type="image/webp">
+              <source srcset="img/main/about/1.webp" media="(min-width: 768)" type="image/webp">
               <img class="about__img" src="img/main/about/1.png" alt="декоративная картинка">
             </picture>
           </div>
@@ -289,12 +303,12 @@
   <div class="container">
     <div class="footer__inner">
       <div class="footer__item">
-        <a class="footer__link footer__link--adress" href="#">
+        <p class="footer__text footer__text--adress">
           SIA “Esteriol”
           Reg. nr. 41503078790
           Varšavas iela 48, Daugavpils,
           <span class="footer__link-word">LV-5404</span>
-        </a>
+        </p>
         <p class="footer__copy">
           © 2022 ООО “Ломбард Онлайн”
         </p>
@@ -335,144 +349,144 @@
   <div class="modals">
     <div class="modal-overlay">
       <div class="modal modal--1" data-target="form-popup" data-simplebar>
-        <button class="modal__close">
-          <svg class="modal__close-ic">
-            <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
-          </svg>
-        </button>
-        <div class="modal__tabs">
-          <button class="modal__tabs-btn tab-btn active" data-path="login-form">
-            Авторизация
-          </button>
-          <button class="modal__tabs-btn tab-btn" data-path="reg-form">
-            Регистрация
-          </button>
-        </div>
-        <form class="popup-form active" action="#" data-target="login-form" >
-          <label class="popup-form__label">
-            <span class="popup-form__text">
-              E-mail:
-            </span>
-            <input class="popup-form__input" type="email" placeholder="Введите ваш e-mail">
-          </label>
-          <label class="popup-form__label">
-            <span class="popup-form__text">
-              Пароль:
-            </span>
-            <input class="popup-form__input" type="password" placeholder="Введите ваш пароль">
-          </label>
-          <div class="popup-form__box">
-            <button class="popup-form__btn second-btn" type="submit">
-              Войти
-            </button>
-            <button class="popup-form__popup-btn popup-btn" type="button" data-path="recovery-popup">
-              Забыли пароль?
-            </button>
-          </div>
-        </form>
-        <form class="popup-form" action="#" data-target="reg-form">
-          <label class="popup-form__label">
-            <span class="popup-form__text">
-              Имя:
-            </span>
-            <input class="popup-form__input" type="text" placeholder="Введите ваше имя">
-          </label>
-          <label class="popup-form__label">
-            <span class="popup-form__text">
-              Фамилия:
-            </span>
-            <input class="popup-form__input" type="email" placeholder="Введите вашу фамилию">
-          </label>
-          <label class="popup-form__label">
-            <span class="popup-form__text">
-              E-mail:
-            </span>
-            <input class="popup-form__input" type="email" placeholder="Введите ваш e-mail">
-          </label>
-          <label class="popup-form__label">
-            <span class="popup-form__text">
-              Пароль:
-            </span>
-            <input class="popup-form__input" type="password" placeholder="Введите ваш пароль">
-          </label>
-          <label class="popup-form__label">
-            <span class="popup-form__text">
-              Повторить пароль:
-            </span>
-            <input class="popup-form__input" type="password" placeholder="Введите пароль повторно">
-          </label>
-          <button class="popup-form__btn second-btn" type="submit">
-            Войти
-          </button>
-        </form>
-      </div>
+  <button class="modal__close">
+    <svg class="modal__close-ic">
+      <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
+    </svg>
+  </button>
+  <div class="modal__tabs">
+    <button class="modal__tabs-btn tab-btn active" data-path="login-form">
+      Авторизация
+    </button>
+    <button class="modal__tabs-btn tab-btn" data-path="reg-form">
+      Регистрация
+    </button>
+  </div>
+  <form class="popup-form active" action="#" data-target="login-form" >
+    <label class="popup-form__label">
+      <span class="popup-form__text">
+        E-mail:
+      </span>
+      <input class="popup-form__input" type="email" placeholder="Введите ваш e-mail">
+    </label>
+    <label class="popup-form__label">
+      <span class="popup-form__text">
+        Пароль:
+      </span>
+      <input class="popup-form__input" type="password" placeholder="Введите ваш пароль">
+    </label>
+    <div class="popup-form__box">
+      <button class="popup-form__btn second-btn" type="submit">
+        Войти
+      </button>
+      <button class="popup-form__popup-btn popup-btn btn-reset" type="button" data-path="recovery-popup">
+        Забыли пароль?
+      </button>
+    </div>
+  </form>
+  <form class="popup-form" action="#" data-target="reg-form">
+    <label class="popup-form__label">
+      <span class="popup-form__text">
+        Имя:
+      </span>
+      <input class="popup-form__input" type="text" placeholder="Введите ваше имя">
+    </label>
+    <label class="popup-form__label">
+      <span class="popup-form__text">
+        Фамилия:
+      </span>
+      <input class="popup-form__input" type="email" placeholder="Введите вашу фамилию">
+    </label>
+    <label class="popup-form__label">
+      <span class="popup-form__text">
+        E-mail:
+      </span>
+      <input class="popup-form__input" type="email" placeholder="Введите ваш e-mail">
+    </label>
+    <label class="popup-form__label">
+      <span class="popup-form__text">
+        Пароль:
+      </span>
+      <input class="popup-form__input" type="password" placeholder="Введите ваш пароль">
+    </label>
+    <label class="popup-form__label">
+      <span class="popup-form__text">
+        Повторить пароль:
+      </span>
+      <input class="popup-form__input" type="password" placeholder="Введите пароль повторно">
+    </label>
+    <button class="popup-form__btn second-btn" type="submit">
+      Войти
+    </button>
+  </form>
+</div>
       <div class="modal recovery-modal" data-target="recovery-popup" data-simplebar>
-        <button class="modal__close">
-          <svg class="modal__close-ic">
-            <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
-          </svg>
-        </button>
-        <div class="modal__tabs-btn recovery-modal__text">
-          Восстановить пароль
-        </div>
-        <form class="recovery-form" action="#">
-          <label class="popup-form__label">
-            <span class="popup-form__text">
-              E-mail:
-            </span>
-            <input class="popup-form__input" type="text" placeholder="Введите ваш e-mail">
-          </label>
-          <button class="popup-form__btn second-btn" type="submit">
-            Отправить
-          </button>
-        </form>
-      </div>
+  <button class="modal__close">
+    <svg class="modal__close-ic">
+      <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
+    </svg>
+  </button>
+  <div class="modal__tabs-btn recovery-modal__text">
+    Восстановить пароль
+  </div>
+  <form class="recovery-form" action="#">
+    <label class="popup-form__label">
+      <span class="popup-form__text">
+        E-mail:
+      </span>
+      <input class="popup-form__input" type="text" placeholder="Введите ваш e-mail">
+    </label>
+    <button class="popup-form__btn second-btn" type="submit">
+      Отправить
+    </button>
+  </form>
+</div>
       <div class="modal support-modal" data-target="support-popup" data-simplebar>
-        <button class="modal__close">
-          <svg class="support-modal__ic modal__close-ic">
-            <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
-          </svg>
-        </button>
-        <div class="support-modal__text">
-          Вызов специалиста
+  <button class="modal__close">
+    <svg class="support-modal__ic modal__close-ic">
+      <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
+    </svg>
+  </button>
+  <div class="support-modal__text">
+    Вызов специалиста
+  </div>
+  <div class="support-modal__inner">
+    <form class="recovery-form" action="#">
+      <label class="popup-form__label">
+        <span class="popup-form__text">
+          Имя и фамилия:
+        </span>
+        <input class="popup-form__input" type="text" placeholder="Введите ваше имя и фамилию">
+      </label>
+      <label class="popup-form__label">
+        <span class="popup-form__text">
+          Телефон:
+        </span>
+        <input class="popup-form__input" type="text" placeholder="+XX XXX XXX XX XX">
+      </label>
+      <label class="popup-form__label">
+        <span class="popup-form__text">
+          Ваше изделие:
+        </span>
+        <div class="popup-form__box">
+          <select class="popup-form__select" name="" id="">
+            <option class="popup-form__option" value="">Указать изделие</option>
+            <option class="popup-form__option" value="">Ноутбук</option>
+            <option class="popup-form__option" value="">Телефон</option>
+            <option class="popup-form__option" value="">Планшет</option>
+          </select>
         </div>
-        <div class="support-modal__inner">
-          <form class="recovery-form" action="#">
-            <label class="popup-form__label">
-              <span class="popup-form__text">
-                Имя и фамилия:
-              </span>
-              <input class="popup-form__input" type="text" placeholder="Введите ваше имя и фамилию">
-            </label>
-            <label class="popup-form__label">
-              <span class="popup-form__text">
-                Телефон:
-              </span>
-              <input class="popup-form__input" type="text" placeholder="+XX XXX XXX XX XX">
-            </label>
-            <label class="popup-form__label">
-              <span class="popup-form__text">
-                Ваше изделие:
-              </span>
-              <div class="popup-form__box">
-                <select class="popup-form__select" name="" id="">
-                  <option class="popup-form__option" value="">Указать изделие</option>
-                  <option class="popup-form__option" value="">Ноутбук</option>
-                  <option class="popup-form__option" value="">Телефон</option>
-                  <option class="popup-form__option" value="">Планшет</option>
-                </select>
-              </div>
-            </label>
-            <button class="popup-form__btn second-btn" type="submit">
-              Отправить
-            </button>
-          </form>
-        </div>
-      </div>
+      </label>
+      <button class="popup-form__btn second-btn" type="submit">
+        Отправить
+      </button>
+    </form>
+  </div>
+</div>
     </div>
   </div>
 
-  <script src="js/main.min.js?_v=20220414230156"></script>
+  <script src="js/main.min.js?_v=20220415225102"></script>
 </body>
 
 </html>
