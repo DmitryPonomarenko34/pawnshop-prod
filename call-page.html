@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/autorization.min.css?_v=20220416201640">
+  <title>Ломбард онлайн</title>
+</head>
+
+<body class="body">
+  <div class="site-container">
+    <header class="header header--call">
+  <div class="container">
+    <div class="header__inner">
+      <a class="header__logo logo" href="#">
+        <picture>
+          <source srcset="img/logo.svg" media="(min-width: 520px)">
+          <source srcset="img/phone-logo.svg" media="(min-width: 320px)">
+          <img class="logo__img" src="img/logo.svg" alt="логотип">
+         </picture>
+      </a>
+      <nav class="menu">
+        <button class="burger">
+          <span class="burger__line"></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link link" href="#">
+              Заявки
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link link" href="#">
+              Ломбард онлайн
+            </a>
+          </li>
+          <li class="menu__list-item">
+            <button class="menu__list-link link popup-btn btn-reset" data-path="support-popup">
+              Вызов специалиста
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="basket">
+        <a class="basket__link" href="#">
+          <svg class="second-ic">
+            <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
+          </svg>
+        </a>
+        <span class="disabled basket__num">
+          0
+        </span>
+      </div>
+      <button class="header__btn popup-btn second-btn" data-path="form-popup">
+        <span class="header__btn-text">
+          Мой кабинет
+        </span>
+        <svg class="header__btn-ic">
+          <use xlink:href="img/icons/mono/spriteMono.svg#user"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <section class="o-sec">
+        <div class="container">
+          <h1 class="title">
+            Вызвать специалиста:
+          </h1>
+          <form class="recovery-form form" action="#">
+            <label class="form__label">
+              <span class="form__text">
+                Имя и фамилия:
+              </span>
+              <input class="form__input" type="text" placeholder="Введите ваше имя и фамилию">
+            </label>
+            <label class="form__label">
+              <span class="form__text">
+                Телефон:
+              </span>
+              <input class="form__input" type="text" placeholder="+XX XXX XXX XX XX">
+            </label>
+            <label class="form__label">
+              <span class="form__text">
+                Ваше изделие:
+              </span>
+              <div class="form__selectbox">
+                <select class="form__select" name="" id="">
+                  <option class="form__option" value="">Указать изделие</option>
+                  <option class="form__option" value="">Ноутбук</option>
+                  <option class="form__option" value="">Телефон</option>
+                  <option class="form__option" value="">Планшет</option>
+                </select>
+              </div>
+            </label>
+            <label class="form__label" for="fyleImg">
+              <input class="form__box-input" type="file" name="fyleImg" id="fyleImg" accept="image/*" />
+              <p class="form__box-text">
+                Загрузка изображения
+              </p>
+            </label>
+            <label class="form__label" for="checkboxInput">
+              <input class="form__box-input" type="checkbox" id="checkboxInput" />
+              <span class="form__box-checkbox">
+                Даю согласие на обработку персональных данных
+              </span>
+            </label>
+            <button class="form__btn second-btn" type="submit">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__item">
+        <p class="footer__text footer__text--adress">
+          SIA “Esteriol”
+          Reg. nr. 41503078790
+          Varšavas iela 48, Daugavpils,
+          <span class="footer__link-word">LV-5404</span>
+        </p>
+        <p class="footer__copy">
+          © 2022 ООО “Ломбард Онлайн”
+        </p>
+      </div>
+      <div class="footer__item">
+        <a class="footer__item-link contact-link" href="tel:+37129999209">
+          +371 29 999 209
+        </a>
+        <a class="footer__link footer__mail" href="mailto:info@esteriol.lv">
+          info@esteriol.lv
+        </a>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <svg class="footer__list-ic">
+              <use xlink:href="img/icons/multi/spriteMulti.svg#visa"></use>
+            </svg>
+          </li>
+          <li class="footer__list-item">
+            <svg class="footer__list-ic">
+              <use xlink:href="img/icons/multi/spriteMulti.svg#mastercard"></use>
+            </svg>
+          </li>
+          <li class="footer__list-item">
+            <img class="footer__list-ic" src="img/icons/multi/spriteMulti.svg#word" alt="">
+          </li>
+          <li class="footer__list-item">
+            <svg class="footer__list-ic">
+              <use xlink:href="img/icons/multi/spriteMulti.svg#maestro"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <div class="modals">
+    <div class="modal-overlay">
+      <div class="modal modal--1" data-target="form-popup" data-simplebar>
+  <button class="modal__close">
+    <svg class="modal__close-ic">
+      <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
+    </svg>
+  </button>
+  <div class="modal__tabs">
+    <button class="modal__tabs-btn tab-btn active" data-path="login-form">
+      Авторизация
+    </button>
+    <button class="modal__tabs-btn tab-btn" data-path="reg-form">
+      Регистрация
+    </button>
+  </div>
+  <form class="popup-form form active" action="#" data-target="login-form" >
+    <label class="form__label">
+      <span class="form__text">
+        E-mail:
+      </span>
+      <input class="form__input" type="email" placeholder="Введите ваш e-mail">
+    </label>
+    <label class="form__label">
+      <span class="form__text">
+        Пароль:
+      </span>
+      <input class="form__input" type="password" placeholder="Введите ваш пароль">
+    </label>
+    <div class="form__box">
+      <button class="form__btn second-btn" type="submit">
+        Войти
+      </button>
+      <button class="form__popup-btn popup-btn btn-reset" type="button" data-path="recovery-popup">
+        Забыли пароль?
+      </button>
+    </div>
+  </form>
+  <form class="popup-form form" action="#" data-target="reg-form">
+    <label class="form__label">
+      <span class="form__text">
+        Имя:
+      </span>
+      <input class="form__input" type="text" placeholder="Введите ваше имя">
+    </label>
+    <label class="form__label">
+      <span class="form__text">
+        Фамилия:
+      </span>
+      <input class="form__input" type="email" placeholder="Введите вашу фамилию">
+    </label>
+    <label class="form__label">
+      <span class="form__text">
+        E-mail:
+      </span>
+      <input class="form__input" type="email" placeholder="Введите ваш e-mail">
+    </label>
+    <label class="form__label">
+      <span class="form__text">
+        Пароль:
+      </span>
+      <input class="form__input" type="password" placeholder="Введите ваш пароль">
+    </label>
+    <label class="form__label">
+      <span class="form__text">
+        Повторить пароль:
+      </span>
+      <input class="form__input" type="password" placeholder="Введите пароль повторно">
+    </label>
+    <button class="form__btn second-btn" type="submit">
+      Войти
+    </button>
+  </form>
+</div>
+      <div class="modal recovery-modal" data-target="recovery-popup" data-simplebar>
+  <button class="modal__close">
+    <svg class="modal__close-ic">
+      <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
+    </svg>
+  </button>
+  <div class="modal__tabs-btn recovery-modal__text">
+    Восстановить пароль
+  </div>
+  <form class="recovery-form form" action="#">
+    <label class="form__label">
+      <span class="form__text">
+        E-mail:
+      </span>
+      <input class="form__input" type="text" placeholder="Введите ваш e-mail">
+    </label>
+    <button class="form__btn second-btn" type="submit">
+      Отправить
+    </button>
+  </form>
+</div>
+    </div>
+  </div>
+
+  <script src="js/default.min.js?_v=20220416201640"></script>
+</body>
+
+</html>
