@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220415225102">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220416123032">
   <title>Ломбард онлайн</title>
 </head>
 
@@ -442,7 +442,7 @@
   </form>
 </div>
       <div class="modal support-modal" data-target="support-popup" data-simplebar>
-  <button class="modal__close">
+  <button class="modal__close support-modal__close">
     <svg class="support-modal__ic modal__close-ic">
       <use xlink:href="img/icons/mono/spriteMono.svg#close"></use>
     </svg>
@@ -468,7 +468,7 @@
         <span class="popup-form__text">
           Ваше изделие:
         </span>
-        <div class="popup-form__box">
+        <div class="popup-form__selectbox">
           <select class="popup-form__select" name="" id="">
             <option class="popup-form__option" value="">Указать изделие</option>
             <option class="popup-form__option" value="">Ноутбук</option>
@@ -476,6 +476,18 @@
             <option class="popup-form__option" value="">Планшет</option>
           </select>
         </div>
+      </label>
+      <label class="popup-form__label" for="fyleImg">
+        <input class="popup-form__box-input" type="file" name="fyleImg" id="fyleImg" accept="image/*" />
+        <p class="popup-form__box-text">
+          Загрузка изображения
+        </p>
+      </label>
+      <label class="popup-form__label" for="checkboxInput">
+        <input class="popup-form__box-input" type="checkbox" id="checkboxInput" />
+        <span class="popup-form__box-checkbox">
+          Даю согласие на обработку персональных данных
+        </span>
       </label>
       <button class="popup-form__btn second-btn" type="submit">
         Отправить
@@ -486,7 +498,7 @@
     </div>
   </div>
 
-  <script src="js/main.min.js?_v=20220415225102"></script>
+  <script src="js/main.min.js?_v=20220416123032"></script>
 </body>
 
 </html>
