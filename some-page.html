@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Ошибка, страница не найдена ООО “Ломбард Онлайн”</title>
+  <meta http-equiv="Content-Language" content="ru" />
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="/?1650382604" rel="shortcut icon" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/autorization.min.css?_v=20220419200333">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js?_v=20220419200333"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    $(document).ready(function () {
+      $(".cookie-window-close").click(function (e) {
+        e.preventDefault();
+        $.ajax({
+          type: "POST",
+          url: "/inc/cookie/cookie.php",
+          data: {
+            CLOSED_COOKIE_WINDOW: 1
+          },
+          cache: false,
+          success: function (data) {
+            $(".cookie-window-block").addClass("closed").addClass("hidden");
+            $('body').removeClass("cookie-enabled");
+          }
+        });
+      });
+    });
+  </script>
+  <!--AIR DATEPICKER-->
+</head>
+
+<body class="inside text-page">
+
+  <div class="page">
+    <div class="page__wrapper">
+
+      <header class="header ">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo logo" href="/ru">
+              <picture>
+                <source srcset="img/logo.svg" media="(min-width: 520px)">
+                <source srcset="img/phone-logo.svg" media="(min-width: 300px)">
+                <img class="logo__img" src="img/logo.svg" alt="логотип">
+              </picture>
+            </a>
+            <nav class="menu">
+              <button class="burger">
+                <span class="burger__line"></span>
+              </button>
+              <ul class="menu__list">
+
+
+              </ul>
+            </nav>
+            <div class="basket">
+              <a class="basket__link" href="#">
+                <svg class="second-ic">
+                  <use xlink:href="img/icons/mono/spriteMono.svg#basket"></use>
+                </svg>
+              </a>
+              <span class="disabled basket__num">
+                0
+              </span>
+            </div>
+            <button class="header__btn popup-btn second-btn" data-path="form-popup">
+              <span class="header__btn-text">
+                Мой кабинет
+              </span>
+              <svg class="header__btn-ic">
+                <use xlink:href="img/icons/mono/spriteMono.svg#user"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+
+
+      <div class="o-sec">
+        <div class="container">
+          <h1 class="title">
+            Great!
+          </h1>
+          <p class="margin-b">
+            аккаунт активирован
+          </p>
+        </div>
+        <img src="img/radial.png" alt="" class="page__radial">
+      </div>
+
+    </div>
+  </div>
+  <!--page-->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <p class="footer__text footer__text--adress">
+            Reg. nr. , <span class="footer__link-word"> </span>
+          </p>
+          <p class="footer__copy">
+            © 2021 - 2022 ООО “Ломбард Онлайн” </p>
+        </div>
+        <div class="footer__item">
+
+
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <svg class="footer__list-ic">
+                <use xlink:href="img/icons/multi/spriteMulti.svg#visa"></use>
+              </svg>
+            </li>
+            <li class="footer__list-item">
+              <svg class="footer__list-ic">
+                <use xlink:href="img/icons/multi/spriteMulti.svg#mastercard"></use>
+              </svg>
+            </li>
+            <li class="footer__list-item">
+              <img class="footer__list-ic" src="img/icons/multi/spriteMulti.svg#word" alt="">
+            </li>
+            <li class="footer__list-item">
+              <svg class="footer__list-ic">
+                <use xlink:href="img/icons/multi/spriteMulti.svg#maestro"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
